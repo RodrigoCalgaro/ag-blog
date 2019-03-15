@@ -1,0 +1,27 @@
+#background {
+    background-image: url(../images/background.jpg);
+}
+
+#papel-arrugado {
+    background-image: url(../images/papel-arrugado.jpg);
+    min-height: 800px
+}
+
+@font-face {
+    font-family: "maquinaDeEscribirCuerpo";
+    src: url(../fonts/TravelingTypewriter.ttf);
+}
+
+
+@font-face {
+    font-family: "maquinaDeEscribirTitulo";
+    src: url(../fonts/KingthingsTrypewriter2.ttf);
+ }
+ 
+ p {
+    font-family: "maquinaDeEscribirCuerpo";
+ }
+
+ h1, h2, h3, h4, h5 {
+     font-family: "maquinaDeEscribirTitulo" !important
+ }
