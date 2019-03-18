@@ -1,0 +1,33 @@
+<div id="addCommentModal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form class="container" id="form-validation" novalidate method="POST" action="/comentarios/add">
+                <div class="modal-header">
+                    <h4 class="modal-title">Agregar Comentario</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <label for="comentarioNombre" class='control-label'>Nombre</label>
+                        <input name="comentario[nombre]" type="text" class="form-control" id="comentarioNombre"
+                            placeholder="Nombre" required>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <label for="comentarioDescripcion" class='control-label'>Comentario</label>
+                        <textarea name="comentario[comentario]" class="form-control" id="comentarioDescripcion"
+                            placeholder="Ingrese un comentario." rows="10" required></textarea>
+                    </div>
+
+                    <input name="comentario[postId]" type="hidden" id="comentarioPostId" required>
+                    <input name="comentario[fecha]" type="hidden" id="comentarioFecha" required>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-outline-default" data-dismiss="modal" value="Cancelar">
+                    <input id="botonGuardar" type="submit" class="btn btn-outline-dark" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

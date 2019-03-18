@@ -5,20 +5,74 @@
 
 <body id="background">
     <div class="container bg-light" id="papel-arrugado">
+        <div style="height:20px"></div>
         <div class="row justify-content-center align-items-center  m-4">
             <div class="form-row mt-4 mb-4">
                 <h1 class="text-uppercase">Nos Presentamos</h1>
             </div>
             <br>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima explicabo sed quod omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
+                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
+                explicabo sed quod omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
+                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
+                explicabo sed quod omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
+                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
+                explicabo sed quod omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
+                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
+                explicabo sed quod omnis.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
+                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
+                explicabo sed quod omnis.
             </p>
+
         </div>
+        <div style="height: 30px"></div>
+        <div class="d-flex justify-content-start m-4">
+            <a href="/" class="text-dark">← Volver al Inicio</a>
+        </div>
+        <div class="m-4">
+            <hr>
+            <h2 class="mt-2 mb-2">COMENTARIOS</h2>
+
+            <% comments.forEach(comment => { %>
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>
+                                <%= comment.nombre %>
+                            </h4>
+                        </div>
+                        <div>
+                            <p>
+                                <%= comment.fecha.toLocaleDateString() + ' - ' + comment.fecha.toLocaleTimeString() %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        <%= comment.comentario %>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <% }) %>
+            <br>
+            <button class="btn btn-outline-dark" onclick="addComment(1)">Agregar Comentario</button>
+        </div>
+        <div style="height: 50px"></div>
     </div>
+
+    <% include common-addComment %>
+
+
+    <% include common-scripts %>
+
 </body>
 
 </html>

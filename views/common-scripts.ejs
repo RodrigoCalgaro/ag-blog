@@ -1,0 +1,12 @@
+<script src="/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script>
+    function addComment(id) {
+        document.querySelector("#comentarioPostId").value = id
+        document.querySelector("#comentarioFecha").value = new Date()
+        jQuery(function ($) {
+            $("#addCommentModal").modal('show')
+        })
+    }
+</script>
