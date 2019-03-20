@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<% include common-head %>
+
+<body id="background">
+    <div class="container bg-light" id="papel-arrugado">
+
+        <div class="row justify-content-center align-items-center m-4 pt-4 pb-4">
+            <div class="form-row mt-4 mb-4">
+                <h1 id="postTittle" class="text-uppercase">Unidad 1: LAS ORGANIZACIONES. LA EMPRESA. SU ADMINISTRACIÓN</h1>
+            </div>
+            <br>
+            <p>
+                En la siguiente presentación se muestra en forma de mapa conceptual una esquematización de los
+                siguientes temas: Concepto de Administración. Las Organizaciones. La Empresa como Organización.
+                Dinámica de funcionamiento de la empresa. Concepto de Sistemas. El Pensamiento
+                Sistémico. La Empresa como sistema. Modelo de dirección por sistemas. Sistema de
+                Información: Concepto y tipos de Sistemas de Información. Rol de los sistemas de
+                información en las organizaciones.
+            </p>
+             
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTeuEYR9yP6q1Thphjvzi3R5Jyyu7TWbUHY6oA3YGprMeEhex0XZs7zuoqj38U6iuyUMvtH-3Ik3kXO/embed?start=false&loop=false&delayms=6000"
+                frameborder="0" width="1058" height="624" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+
+        </div>
+
+
+
+        <div style="height: 30px"></div>
+        <div class="d-flex justify-content-start m-4">
+            <a href="/" class="text-dark">← Volver al Inicio</a>
+        </div>
+
+
+        <% include common-socialNetworks %>
+
+        <div class="m-4">
+            <hr>
+            <h2 class="mt-2 mb-2">COMENTARIOS</h2>
+
+            <% comments.forEach(comment => { %>
+            <div class="card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>
+                                <%= comment.nombre %>
+                            </h4>
+                        </div>
+                        <div>
+                            <p>
+                                <%= comment.fecha.toLocaleDateString() + ' - ' + comment.fecha.toLocaleTimeString() %>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>
+                        <%= comment.comentario %>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <% }) %>
+            <br>
+            <button class="btn btn-outline-dark mb-4" onclick="addComment(2)">Agregar Comentario</button>
+        </div>
+    </div>
+
+    <% include common-addComment %>
+
+
+    <% include common-scripts %>
+
+</body>
+
+</html>

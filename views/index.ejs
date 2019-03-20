@@ -4,15 +4,38 @@
 <% include common-head %>
 
 <body id="background">
-  <div class="container bg-light" id="papel-arrugado">
-    <div class="row justify-content-center align-items-center  m-4">
+  <div class="container bg-light" id="papel-arrugado" class="">
+    <div class="row justify-content-center align-items-center m-4 pt-4">
       <div class="form-row mt-4 mb-4">
-        <h1 class="text-uppercase">Administración Gerencial</h1>
+        <h1 id="postTittle" class="text-uppercase">Administración Gerencial</h1>
       </div>
       <br>
 
+      <!-- Card Unidad 1 -->
+      <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <img src="images/empresas.jpg" class="w-100">
+              </div>
+              <div class="col-md-8 px-3">
+                <div class="card-block px-3">
+                  <h3 class="card-title mt-2">UNIDAD 1: LAS ORGANIZACIONES. LA EMPRESA. SU ADMINISTRACIÓN</h3>
+                  <h4>19/03/2019</h4>
+                  <p class="card-text">Concepto de Administración. Las Organizaciones. La Empresa como Organización.
+                      Dinámica de funcionamiento de la empresa. Concepto de Sistemas. El Pensamiento
+                      Sistémico. La Empresa como sistema. Modelo de dirección por sistemas. Sistema de
+                      Información: Concepto y tipos de Sistemas de Información. Rol de los sistemas de
+                      información en las organizaciones. </p>
+                  <a href="/2" class="btn btn-outline-dark mt-2 mb-3" disabled>Ver Post</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Card Unidad 1 -->
 
-      
+      <!-- Card Quienes Somos -->
       <div class="container py-3">
         <div class="card">
           <div class="row ">
@@ -30,9 +53,13 @@
           </div>
         </div>
       </div>
-    
-  
+      <!-- END Card Quienes Somos -->
+      
+      
     </div>
+    <% include common-socialNetworks %>
+    <% include common-scripts %>
+    
   </div>
 </body>
 

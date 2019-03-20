@@ -5,35 +5,70 @@
 
 <body id="background">
     <div class="container bg-light" id="papel-arrugado">
-        <div style="height:20px"></div>
-        <div class="row justify-content-center align-items-center  m-4">
+
+        <div class="row justify-content-center align-items-center m-4 pt-4 pb-4">
             <div class="form-row mt-4 mb-4">
-                <h1 class="text-uppercase">Nos Presentamos</h1>
+                <h1 id="postTittle" class="text-uppercase">Nos Presentamos</h1>
             </div>
             <br>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
-                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
-                explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
-                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
-                explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
-                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
-                explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
-                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
-                explicabo sed quod omnis.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi commodi explicabo odit
-                beatae repellendus et in aliquam est. Soluta expedita aperiam perspiciatis animi quisquam. Minima
-                explicabo sed quod omnis.
+                El presente blog es desarrollado y mantenido por Matías Jaime, Luis Oliva y Rodrigo Calgaro, alumnos de
+                la Universidad Tecnológica Nacional - Facultad Regional Resistencia para la materia Administración
+                Gerencial correspondiente al quinto año de la carrera Ingeniería en Sistemas de Información.
             </p>
+            <p class="mt-2">
+                Nuestro objetivo es presentar el contenido de la catedra mediante la utilización de resúmenes, mapas
+                conceptuales, presentaciones, etc. para favorecer el autoaprendizaje de los temas tratados.
+            </p>
+            <p class="mt-2">
+                Los artículos publicados se encuentran abiertos a debate por lo tanto esperamos una retroalimentación a
+                través de los comentarios por parte de los lectores.
+            </p>
+
+            <p class="mt-2">
+                A Continuación les dejamos los enlaces a los blogs de nuestros compañeros, donde podrán encontrar
+                información complementaria a la del presente desarrollada desde una perspectiva diferente:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://adminprocuratio.wordpress.com/" class="mt-2 text-dark">Blog de Costilla Juan Patricio y Lima Paula Belen</a>
+                </li>
+                <li>
+                    <a href="https://agfrre2019.blogspot.com/" class="mt-2 text-dark">Blog de Garcia Akiyama Jorge Horacio y Grinberg David Emmanuel</a>
+                </li>
+                <li>
+                    <a href="https://optigeren.wordpress.com" class="mt-2 text-dark">Blog de Bay Cinthya y Garcia Maria Belen</a>
+                </li>
+                <li>
+                    <a href="https://admingerencial.jimdofree.com/" class="mt-2 text-dark">Blog de Fiz García Alan y Hruza Gabriel</a>
+                </li>
+                <li>
+                    <a href="https://admgcialisi.wordpress.com" class="mt-2 text-dark">Blog de Sosa Peters German y Moore Walter Enrique</a>
+                </li>
+                <li>
+                    <a href="https://admgerbarriostodt.blogspot.com" class="mt-2 text-dark">Blog de Barrios Evelyn y Todt Carolina</a>
+                </li>
+                <li>
+                    <a href="https://administraciongerencial2019frre.blogspot.com" class="mt-2 text-dark">Blog de Pollero Hector Emiliano y Huerga Emanuel</a>
+                </li>
+                <li>
+                    <a href="https://admgerencial2019.blogspot.com/" class="mt-2 text-dark">Blog de Ventola Gabriel y Zurlo Maximiliano</a>
+                </li>
+                <li>
+                    <a href="https://admgerencial2019.wordpress.com/" class="mt-2 text-dark">Blog de Campuzano Cinthia y Fernandez Yaique Gonzalo</a>
+                </li>
+            </ul>
+
+
 
         </div>
         <div style="height: 30px"></div>
         <div class="d-flex justify-content-start m-4">
             <a href="/" class="text-dark">← Volver al Inicio</a>
         </div>
+
+        <% include common-socialNetworks %>
+
         <div class="m-4">
             <hr>
             <h2 class="mt-2 mb-2">COMENTARIOS</h2>
@@ -63,9 +98,8 @@
             <br>
             <% }) %>
             <br>
-            <button class="btn btn-outline-dark" onclick="addComment(1)">Agregar Comentario</button>
+            <button class="btn btn-outline-dark mb-4" onclick="addComment(1)">Agregar Comentario</button>
         </div>
-        <div style="height: 50px"></div>
     </div>
 
     <% include common-addComment %>

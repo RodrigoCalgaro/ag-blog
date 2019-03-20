@@ -31,9 +31,9 @@ router.delete('/api/delete/:id', function (req, res, next) {
         where: {
             idComentario: req.params.id
         }
-    }).then(comment => {
+    }).then(deleted => {
         res.send({
-            comment
+            deleted
         })
     })
 })

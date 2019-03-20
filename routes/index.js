@@ -42,4 +42,17 @@ router.get('/1', function (req, res, next) {
   })
 });
 
+/* GET Post: Unidad 1. */
+router.get('/2', function (req, res, next) {
+  Comentario.findAll({
+    where: {
+      postId: 2
+    }
+  }).then(comments => {
+    res.render('2-Unidad1', {
+      comments
+    });
+  })
+});
+
 module.exports = router;
