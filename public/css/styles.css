@@ -17,16 +17,31 @@
 @font-face {
     font-family: "maquinaDeEscribirTitulo";
     src: url(../fonts/KingthingsTrypewriter2.ttf);
- }
- 
+}
+
 /*  p, a {
     font-family: "maquinaDeEscribirCuerpo";
  }
  */
- h1, h2, h3, h4, h5, label {
-     font-family: "maquinaDeEscribirTitulo" !important
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+label {
+    font-family: "maquinaDeEscribirTitulo" !important
+}
 
 /*  .btn {
     font-family: "maquinaDeEscribirCuerpo" !important
  } */
+
+nav {
+    /* border-radius: 10px; */
+    box-shadow: 0 0 15px #000;
+    background: #fff;
+}
+
+.card {
+    box-shadow: 0 0 5px rgba(97, 97, 97, 0.623);  
+}
