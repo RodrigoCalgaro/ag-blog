@@ -4,13 +4,15 @@
 <% include common-head %>
 
 <body id="background">
-    <div class="container bg-light" id="papel-arrugado">
+    <div class="container bg-light  pl-4 pr-4" id="papel-arrugado">
 
-        <div class="row justify-content-center align-items-center m-4 pt-4 pb-4">
-            <div class="form-row mt-4 mb-4">
-                <h1 id="postTittle" class="text-uppercase">Unidad 1: LAS ORGANIZACIONES. LA EMPRESA. SU ADMINISTRACIÓN</h1>
+        <div class="row justify-content-start align-items-center m-4 p-4">
+            <div class="form-row mt-4 mb-4 col-md-12 justify-content-center align-items-center">
+                <h1 id="postTittle" class="text-uppercase  mt-4 mb-4">Unidad 1: LAS ORGANIZACIONES. LA EMPRESA. SU
+                    ADMINISTRACIÓN</h1>
             </div>
             <br>
+
             <p>
                 En la siguiente presentación se muestra en forma de mapa conceptual una esquematización de los
                 siguientes temas: Concepto de Administración. Las Organizaciones. La Empresa como Organización.
@@ -20,7 +22,8 @@
                 información en las organizaciones.
             </p>
 
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRzEfwfy9CHBgMvdSA0INqoCflxehDS7GQT7t36ZzGr2LC6ab_vFHo0GirQA_1b1slxWnn2kLr_zy3n/embed?start=false&loop=false&delayms=10000"
+            <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vRzEfwfy9CHBgMvdSA0INqoCflxehDS7GQT7t36ZzGr2LC6ab_vFHo0GirQA_1b1slxWnn2kLr_zy3n/embed?start=false&loop=false&delayms=10000"
                 frameborder="0" width="1058" height="624" allowfullscreen="true" mozallowfullscreen="true"
                 webkitallowfullscreen="true"></iframe>
 
@@ -68,9 +71,9 @@
             <button class="btn btn-outline-dark mb-4" onclick="addComment(2)">Agregar Comentario</button>
         </div>
         <% include common-addComment %>
-    
+
         <% include common-foot %>
-    
+
         <% include common-scripts %>
     </div>
 
