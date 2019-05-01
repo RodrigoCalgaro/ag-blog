@@ -45,3 +45,7 @@ nav {
 .card {
     box-shadow: 0 0 5px rgba(97, 97, 97, 0.623);  
 }
+
+#imgNav {
+    margin: 0 !important;
+}
