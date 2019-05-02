@@ -43,13 +43,18 @@ nav {
 }
 
 .card {
-    box-shadow: 0 0 5px rgb(182, 182, 182);  
+    box-shadow: 0 0 5px rgb(182, 182, 182);
 }
 
 #imgNav {
     margin: 0 !important;
+    box-shadow: 0 0 0px !important
 }
 
 a.navbar-brand:hover {
     background-color: rgb(233, 233, 233);
-  }
+}
+
+img {
+    box-shadow: 0 0 2px rgb(182, 182, 182);
+}
