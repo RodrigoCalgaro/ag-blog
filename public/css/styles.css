@@ -5,7 +5,8 @@
 #papel-arrugado {
     background-image: url(../images/Background-3.jpg);
     /* background-image: url(../images/papel-arrugado.png); */
-    min-height: 900px
+    min-height: 900px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
 }
 
 /* @font-face {
@@ -64,8 +65,3 @@ img {
     margin: 0px !important;
     margin-left: 0px !important
 }
-
-/* img {
-    margin: 10px;
-    margin-left: 150px
-} */
